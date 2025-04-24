@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--page title-->
+    <title>Login/Registration page</title>
+
+    <!--icon image and stylsheet imports-->
+    <link rel="icon" href="./resources/CB.png" type="image/x-icon">
+    <link rel="stylesheet" href="./resources/profile.css" type="text/css">
+
+    <!-- importing font awesome icons, star icons and social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/99c03c2332.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--page header with username loading (the username loading is injected using JS)-->
+    <h1>Welcome <span id="username-display"></span>!</h1>
+        <!--logout button-->
+        <input id="logout" type="submit" value="logout" />
+        <!--start of table including add project button, search, and export button-->
+    <div id="projectsTable">
+        <button id="add-project">Add New Project</button>
+        <input type="text" id="searchInput" placeholder="Search projects">
+        <button id="export">Export</button>
+        <!--Start of table with hardcoded headers-->
+        <table id="projectTable">
+            <thead>
+                <tr>
+                    <th>Project Title</th>
+                    <th>Project Start Date</th>
+                    <th>Project End Date</th>
+                    <th>Description</th>
+                    <th>Phase</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <!--new project fields hardcoded but hidden by default thanks to the css -->
+            <!--then displayed using JS on add project button interaction-->
+            <tr id="new-project">
+                <td><input type="text" id="new-title" placeholder="Project Title"></td>
+                <td><input type="date" id="new-start-date"></td>
+                <td><input type="date" id="new-end-date"></td>
+                <td><input type="text" id="new-desc" placeholder="Description"></td>
+                <td>
+                    <select id="new-phase">
+                    <option value="design">Design</option>
+                    <option value="development">Development</option>
+                    <option value="testing">Testing</option>
+                    <option value="deployment">Deployment</option>
+                    <option value="complete">Complete</option>
+                    </select>
+                </td>
+                <!--save and cancel buttons for new project creation-->
+                <td>
+                    <button id="save-new-project">Save</button>
+                    <button id="cancel-new-project">Cancel</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--JS script import-->
+    <script defer src="/profile/profile.js"></script>
+</body>
+<!--footer section with contact details and social media links-->
+<footer>
+    <section id="footer">
+        <div class="contact-info">
+            <p id="name">Christopher Bowen</p>
+            <a href="mailto:240352606@aston.ac.uk" id="aston-email">240352606@aston.ac.uk</a>
+            <p>SUN number: 240352606</p>
+        </div>
+        <!-- seperated out the text and social media icons for easier css styling -->
+        <div class="social-links">
+            <a href="https://github.com/chrisbowen0" class="fa-brands fa-github" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/christopher-bowen-54752632/" class="fa fa-linkedin" target="_blank"></a>
+        </div>
+    </section>
+</footer>
+</html>

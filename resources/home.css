@@ -1,0 +1,246 @@
+
+/* Main body styling for page font, background colour and alignment */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+ /* h1 styling */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* image size */
+#image img {
+  height: 25vw;
+  width: 25vw;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+/* image placement */
+#image {
+  text-align: center;
+}
+
+/* sizing of image on smalled screens */
+@media (max-width: 600px) {
+  #image img {
+    height: 40vw;
+    width: 40vw;
+  }
+}
+
+/* positioning of text element - when I named this I thought I'd be writing more */
+#copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* button positioning */
+#buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* button styling and sizing */
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 150px;
+}
+
+/* button hover over state */
+button:hover {
+  background-color: #0056b3;
+  opacity: 0.8;
+}
+
+/* button sizing on smaller screen */
+@media (max-width: 800px) {
+  button {
+    width: 25vw;
+    height: 5vw;
+    font-size: 0.9rem;
+  }
+}
+
+/* paragraphe styling */
+p {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* search container positioning and hidden by default until JS displays it - includes search and export button*/
+#searchContainer {
+  display: none;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* search box styling and sizing */
+#searchInput {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem 0 1rem 0;
+  width: 200px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* export button styling and sizing */
+#export {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem 1rem 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+/* export button hover over state */
+#export:hover {
+  background-color: #0056b3;
+}
+
+/* table class styling */
+.table {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+  overflow-x: auto;
+}
+
+/* actual table styling for borders mainly */
+.table #projectsTable {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* styling for th and td elements */
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* additional styling for just th element */
+#projectsTable th {
+  background-color: #f2f2f2;
+  white-space: nowrap;
+}
+
+/* table styling for smaller screens */
+@media (max-width: 600px) {
+  #projectsTable th, #projectsTable td {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+
+  #projectsTable {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+}
+
+/* button sizing */
+#buttons {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* font awesome icon styling */
+/* styling of the linkedIn icon */
+  .fa {
+    padding: 4px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;   
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    height: 13.5px;
+  }
+
+  /* styling of the GitHub icon */
+  .fa-brands {
+    padding: 0px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* adding hover over state to social media icons */
+  .fa:hover, .fa-brands:hover {
+    opacity: 0.7;
+  }
+
+  /* footer section styling */
+  #footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  /* spacing for the elements within the footer section */
+  #footer p, #footer a {
+    margin: 5px 10px;
+  }
+  
+  /* styling for the text (name, email and SUN number) */
+  #footer .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  /* stacking contact info on smaller screens */
+  @media (max-width: 600px) {
+    #footer .contact-info {
+      flex-direction: column; 
+      align-items: flex-start;
+    }
+  }

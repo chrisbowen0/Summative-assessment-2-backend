@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--page title-->
+    <title>Login/Registration page</title>
+    <!--icon image and stylsheet imports-->
+    <link rel="icon" href="resources/CB.png" type="image/x-icon">
+    <link rel="stylesheet" href="resources/login.css" type="text/css">
+    <!-- importing font awesome icons, star icons and social media icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/99c03c2332.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--login form-->
+    <form id="login">
+        <input type="text" id="username" name="username" placeholder="Username" required />
+        <input type="password" id="password" name="password" placeholder="Password" required />
+        <input type="submit" id="submit" value="submit"/>
+        <!--registration link for those that need to register-->
+        <div id="register">
+        <p>Not registered? <a href="./Registration.html">Click here</a></p>
+        </div>
+    </form>
+    <!--JS script import-->
+    <script defer src="/login.js"></script>
+</body>
+<!--footer section with contact details and social media links-->
+<footer>
+    <section id="footer">
+        <div class="contact-info">
+            <p id="name">Christopher Bowen</p>
+            <a href="mailto:240352606@aston.ac.uk" id="aston-email">240352606@aston.ac.uk</a>
+            <p>SUN number: 240352606</p>
+        </div>
+        <!-- seperated out the text and social media icons for easier css styling -->
+        <div class="social-links">
+            <a href="https://github.com/chrisbowen0" class="fa-brands fa-github" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/christopher-bowen-54752632/" class="fa fa-linkedin" target="_blank"></a>
+        </div>
+    </section>
+</footer>
+</html>

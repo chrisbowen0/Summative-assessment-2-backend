@@ -1,0 +1,152 @@
+
+/* Main body styling for page font, background colour and alignment */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* h1 styling */
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  /* adds a centered box with shading and rounded corners */
+  form#login {
+    background-color: #fff;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+  
+  /* sets the stylings for the input fields including size, look and font styling/size */
+  form#login input[type="text"],
+  form#login input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+  }
+  
+  /* when fields are selected change border colour and removes the normal border */
+  form#login input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* styling for the submit button */
+  form#login input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+  }
+  
+  /* hoverover styling of submit button */
+  form#login input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* main styling for the register text */
+  #register {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  /* styling for the register link */
+  #register a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* hover over state for the register link */
+  #register a:hover {
+    text-decoration: underline;
+  }
+  
+/* font awesome icon styling */
+/* styling of the linkedIn icon */
+.fa {
+    padding: 4px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;   
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    height: 13.5px;
+  }
+
+  /* styling of the GitHub icon */
+  .fa-brands {
+    padding: 0px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* adding hover over state to social media icons */
+  .fa:hover, .fa-brands:hover {
+    opacity: 0.7;
+  }
+
+  /* footer section styling */
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* spacing for the elements within the footer section */
+  #footer p, #footer a {
+    margin: 5px 10px;
+  }
+  
+  /* styling for the text (name, email and SUN number) */
+  #footer .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+/* stacking contact info on smaller screens */
+  @media (max-width: 600px) {
+    #footer .contact-info {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }

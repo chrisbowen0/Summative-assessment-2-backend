@@ -1,0 +1,206 @@
+/* Main body styling for page font and background colour */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+  }
+  
+  /* h1 styling */
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* main form area positioning */
+  form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* logout button styling and positioning */
+  #logout {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  
+  /* hover over state for the logout button */
+  #logout:hover {
+    background-color: #c82333;
+  }
+  
+  /* projects table sizing and positioning */
+  #projectsTable {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* styling for the add project and export buttons and changes the cursor to make it known it's clickable */
+  #add-project,
+  #export {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0.5rem 1rem 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  /* hover over state for add project and export buttons */
+  #add-project:hover,
+  #export:hover {
+    background-color: #0056b3;
+  }
+  
+  /* search box styling */
+  #searchInput {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem 0;
+    width: 200px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  /* table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* styling for th and td elements */
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* additional styling for just th element */
+  th {
+    background-color: #f0f0f0;
+    font-weight: 600;
+  }
+  
+  /* add a hover over for rows just to look nice */
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* styling for text, date and select fields within the new-project element */
+  #new-project input[type="text"],
+  #new-project input[type="date"],
+  #new-project select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* button styling within the new-project element - save and cancel buttons */
+  #new-project button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-right: 0.4rem;
+    transition: background-color 0.2s;
+  }
+  
+  /* hover over state for the the buttons in the new-project element - save and cancel buttons */
+  #new-project button:hover {
+    background-color: #218838;
+  }
+
+  /* hide the new project row by default until the JS triggers on add project button interaction */
+  #new-project {
+    display: none;
+  }
+
+/* font awesome icon styling */
+/* styling of the linkedIn icon */
+.fa {
+    padding: 4px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;   
+  }
+
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    height: 13.5px;
+  }
+
+  /* styling of the GitHub icon */
+  .fa-brands {
+    padding: 0px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* adding hover over state to social media icons */
+  .fa:hover, .fa-brands:hover {
+    opacity: 0.7;
+  }
+
+  /* footer section styling */
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* spacing for the elements within the footer section */
+  #footer p, #footer a {
+    margin: 5px 10px;
+  }
+  
+  /* styling for the text (name, email and SUN number) */
+  #footer .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  /* stacking contact info on smaller screens */
+  @media (max-width: 600px) {
+    #footer .contact-info {
+      flex-direction: column; 
+      align-items: flex-start;
+    }
+  }  
